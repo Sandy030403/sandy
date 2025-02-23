@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santhosh Prabhakaran - 24251210</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+  <div class="nav-left">
+    <img src="images/Ireland-friends.jpg" alt="Profile Image" class="nav-profile-img" />
+    <span class="nav-title">Santhosh Prabhakaran - 24251210</span>
+  </div>
+  <ul class="nav-right">
+    <li><a href="final.html">Home</a></li>
+    <li><a href="about.html">About</a></li>  <!-- Correct link -->
+    <li><a href="contact.html">Contact</a></li>  <!-- Correct link -->
+  </ul>
+</nav>
+
+
+    <!-- Profile Section -->
+    <header class="profile-section">
+      <h1 class="profile-title">Ireland Friends</h1>
+      <p class="profile-description">
+        Friendship is one of the most valuable aspects of life, providing
+        support, joy, and unforgettable experiences. Moving to a new country can
+        be challenging, but having close friends makes all the difference.
+      </p>
+
+      <!-- Button to Show Friends Section -->
+      <button class="scroll-btn" onclick="showFriends()">Meet My Friends</button>
+    </header>
+
+    <!-- Friends Section (Initially Hidden) -->
+    <section id="more-info" class="hidden">
+      <h2>Meet My Amazing Friends</h2>
+      <div class="friends-container">
+        <div class="friend-card">
+          <img src="images/aswin.jpg" alt="Aswin Kumar" />
+          <h3>Aswin Kumar Viswanathan</h3>
+          <p>Data Scientist</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/kaviya sivaraj.jpg" alt="Kaviya Sivaraj" />
+          <h3>Kaviya Sivaraj</h3>
+          <p>Computer Science Enthusiast</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/viswa.jpg" alt="Viswa Kumar" />
+          <h3>Viswa Kumar</h3>
+          <p>Data Analyst</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/deepa.jpg" alt="Deepa Sri Thamari Selvam" />
+          <h3>Deepa Sri Thamari Selvam</h3>
+          <p>Data Science Researcher</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/raja.jpg" alt="Raja Manikam" />
+          <h3>Raja Manikam</h3>
+          <p>Finance Professional</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/abi.jpg" alt="Abinesh" />
+          <h3>Abinesh</h3>
+          <p>Machine Learning Enthusiast</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/aswin bro.jpg" alt="Aswin's Brother" />
+          <h3>Aswin's Godfather</h3>
+          <p>Psychology Expert</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/jerin bro.jpg" alt="Jerin" />
+          <h3>Jerin</h3>
+          <p>Psychology Researcher</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/abee.jpg" alt="Abee Thersa" />
+          <h3>Abee Thersa</h3>
+          <p>Data Science Enthusiast</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/akil.jpg" alt="Akiljith" />
+          <h3>Akiljith</h3>
+          <p>Computer Science Engineer</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/ansiha.jpg" alt="Anisha" />
+          <h3>Anisha</h3>
+          <p>AI Researcher</p>
+        </div>
+        <div class="friend-card">
+          <img src="images/sandy.jpg" alt="Santhosh" />
+          <h3>Santhosh</h3>
+          <p>Data Science & Business Intelligence Professional</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="contact-title">Want to Know More About Them?</h2>
+      <div class="contact-container">
+        <div class="contact-left">
+          <img src="images/sandy.jpg" alt="Santhosh Prabhakaran" class="contact-img" />
+          <h3>Santhosh Prabhakaran</h3>
+          <p>
+            If you'd like to connect, feel free to drop a message below.
+          </p>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" name="name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email Address" name="email" required />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" rows="4" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-send">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript for Showing Friends Section -->
+    <script>
+      function showFriends() {
+        let section = document.getElementById("more-info");
+        section.style.display = "block"; // Show the section
+        section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to it
+      }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">A Special Note</h6>
+            <p>
+              Every friendship tells a unique story. Cherish the moments, the laughter, and the support!
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>
+              Santhosh Prabhakaran<br />
+              Cork, Ireland<br />
+              <a href="mailto:info@santhoshprabhakaran.com">info@santhoshprabhakaran.com</a><br />
+              <a href="tel:+353 0899454978">+353 0899 454 978</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-copyright text-center">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
